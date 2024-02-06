@@ -24,7 +24,6 @@ class Product(models.Model):
     image = models.ImageField(
         default='default.jpg', upload_to='media/images')
     price = models.PositiveIntegerField()
-    minimum_order = models.PositiveIntegerField()
     quantity = models.PositiveIntegerField()
     description = models.TextField()
 
