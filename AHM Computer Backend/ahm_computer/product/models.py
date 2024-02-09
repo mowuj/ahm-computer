@@ -9,7 +9,8 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
-    
+
+
 class Brand(models.Model):
     name = models.CharField(max_length=50)
 
@@ -28,4 +29,4 @@ class Product(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return self.title
+        return self.name
